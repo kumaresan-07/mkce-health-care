@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Kumarasamy College Health Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h2 {
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .service-link {
+            display: inline-block;
+            background-color: #1a237e;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .service-link:hover {
+            background-color: #283593;
+        }
+
+        /* Header images layout */
+        .header-images {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 1rem 2rem;
+            background-color: #f5f5f5;
+            width: 100%;
+        }
+
+        .header-images img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .college-logo img,
+        .college-picture img {
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .college-logo img:hover,
+        .college-picture img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-images">
+            <div class="college-logo">
+                <img src="images/mkce-logo.jpeg" alt="MKCE Logo">
+            </div>
+            <div class="college-picture">
+                <img src="images/mkce-picture.jpeg" alt="MKCE College Picture">
+            </div>
+        </div>
+        <h1>M. Kumarasamy College Health Services</h1>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <main>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="images/health-tracker.jpg" alt="Health Tracker">
+                <h2>Daily Health Tracker</h2>
+                <p>Monitor your daily health status, track symptoms, and get personalized health recommendations.</p>
+                <a href="health-tracker.html" class="service-link">Access Health Tracker</a>
+            </div>
+
+            <div class="service-card">
+                <img src="images/ai-doctor.jpg" alt="AI Doctor">
+                <h2>AI Health Assistant</h2>
+                <p>Get instant health guidance and preliminary diagnosis from our AI-powered health assistant.</p>
+                <a href="doctor.html" class="service-link">Consult AI Assistant</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 M. Kumarasamy College Health Services</p>
+    </footer>
+</body>
+</html>
